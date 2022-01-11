@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<select id="country" onchange="showgraph()">
+		<option value="one">one</option>
+		<option value="two">two</option>
+		<option value="three">three</option>
+	</select>
+	<div class="content">
+		<div id="one" class="data">
+			<p class="image">
+				<img src="N:\SEM5\project\website\Arsha\assets\img\bluestats.jpeg" width="350" height="350" id="graph1">
+			</p>
+		</div>
+		<div id="two" class="data">
+			<p class="image">
+				<img src="N:\SEM5\project\website\Arsha\assets\img\bmm.png" width="350" height="350" id="graph2">
+			</p>
+    	</div>
+		<div id="three" class="data">
+			<p class="image">
+				<img src="N:\SEM5\project\website\Arsha\assets\img\bmistats.jpeg" width="350" height="350" id="graph3">
+			</p>
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>			
+	<script>
+		$(document).ready(function () {
+			// body...
+			$("#country").on('change', function(){
+				$(".data").hide();
+				$("#"+ $(this).val()).fadeIn(700);
+			}).change();
+		});
+	</script>
+</body>
+</html>

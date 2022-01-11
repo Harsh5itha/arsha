@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TRUINDEX</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/bmm.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+/*button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}*/
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <!-- <img src="assets/img/logo.png" alt="logo" /> -->
+      <h1 class="logo me-auto"><a href="#hero">TRUINDEX</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/bmm.png" alt="" class="img-fluid"pri></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+    
+          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#why-us">Body Mass Index</a></li>
+              <li><a class="nav-link scrollto" href="#skills">World BMI Analysis</a></li>
+              <li><a class="nav-link scrollto" href="#pricing">BMI Calculator</a></li>
+              <li><a class="nav-link scrollto" href="personalizedtips.html">Personalized Tips</a></li>
+            </ul>
+          </li>
+	  <li><a class="nav-link scrollto" href="#team">Team</a></li>
+	  <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#contact">Login</a></li> -->
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1><p>BMI Awareness for a </p>
+	 <p align="justify">Better World, Better Future
+			</p></h1>
+         
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://youtu.be/ZHi_A6tC40Y" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 dna" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/check.jpg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content" style="align-items: center;">
+          
+      
+          		<p align="justify">
+	      We are a group of science students intending to spread awareness about BMI and its significance across the world. Most of them are unaware or neglect it due to the lack of knowledge about its significance and effects on our health.  
+            The project titled “Body Mass Index Analysis” aims to spread awareness about the effects of body mass index on health and how to maintain a good BMI, all around the world. It provides a BMI calculator that calculates an individual’s BMI from the person’s height, weight and age to check if the person is having a good BMI or not. To help people resolve their unbalanced BMI measures, we suggest a diet chart and some exercise tips.
+
+        <!-- </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p> -->
+              The data used in this project is taken from the World Health Organization (WHO) repository, which is a trusted source of data.
+            </p>
+            
+            <!-- <a href="#team" class="btn-learn-more">Contact Us</a> -->
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Us Section -->
+
+<!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p align="justify">We provide a wide number of services to educate about the significance of BMI which are as given below. Some of the services use your personal data with oyour prior permission only to provide you a better and personalized service</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="#why-us">Body Mass Index</a></h4>
+              <p align="justify">Gives you the detailed information about Body Mass Index which includes its importance, effects on health etc</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="#skills">World BMI Analysis</a></h4>
+              <p align="justify">Gives you the statistical report of the body mass index of the world population categorised on different fields such as country, gender and income group</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="#pricing">BMI Calculator</a></h4>
+              <p align="justify">Calculates your body mass index which is based on your age, height and weight. It also classifies into a classification group based on the calculated value.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="personalizedtips.html">Personalized Tips</a></h4>
+              <p align="justify">It provides user with personalized perscription on logging into the website if their current BMI value falls outside the required range.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Body Mass Index (BMI)</strong></h3>
+              <p align="justify">
+                Provides information on BMI which includes introduction, significance, effects etc.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Introduction to BMI<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p align="justify">
+                      BMI is an acronym for Body Mass Index, and it is an indicator of the amount of fat which is stored in the human body. It provides a measure of the appropriateness of your weight to your height, based on health issues which are known to arise as a result of having a BMI which is too low or too high.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> What is the significance of BMI? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p align="justify">
+                      BMI is important as it is able to predict, with considerable accuracy, mortality and morbidity rates in populations. What this means is that BMI is not only able to predict the rates at which people within a given population or group will die and suffer disease, but it is able to predict the incidence of the different types of diseases which occur in the population and which cause those deaths. However, as Adolphe Quetelet (see ‘Who invented BMI?’ above) and Ancel Keys stressed, BMI’s predictive abilities apply to populations only, and not to individuals within it.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> How is BMI calculated?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p align="justify">
+                      BMI is calculated using only the variables of weight and height. Your BMI is equal to your weight in kilograms divided by your height in metres squared. You can also calculate your BMI using imperial units, in which case your BMI is equal to your weight in pounds divided by your height in inches squared, multiplied by 703. See the BMI page for these equations and for further information on the Body Mass Index. To calculate your own BMI, use our BMI calculator.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            <center><a href="BMI_Info.html" style="font-family: Poppins, sans-serif;  font-weight: 500;  font-size: 14px;  letter-spacing: 1px;  display: inline-block;  padding: 12px 32px;  border-radius: 4px;  transition: 0.3s;  line-height: 1;  color: #47b2e4;  -webkit-animation-delay: 0.8s;  animation-delay: 0.8s;  margin-top: 3px;  border: 2px solid #47b2e4;">Know More</a></center>
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+	
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>World BMI Analysis</h3>
+            <p class="fst-italic" align="justify">
+              Analyses and forecasts the BMI value of the world population (country wise) based on the data collected from World Health Organization (WHO) and classifies based on different parameters.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">Country<i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Gender<i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Income Group<i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              
+              <center><a href="BMI_Stats.html" class="btn-border">Get Reports</a></center>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    
+
+   <!-- ======= Cta Section ======= -->
+    <!-- <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section> --><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>BMI CHARTS</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">Card</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/check.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">	
+              <a href="assets/img/portfolio/check.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/know.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/know.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/rays.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/rays.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> --><!-- End Portfolio Section -->
+
+
+
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>BMI Calculator</h2>
+          
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            
+          
+          <div class="box">
+            	<center><h1 style="padding: 5px">Unit Conversions</h1></center>
+
+            	    <div class="box" style="background-color:  #47B2E4; height: 430px; width: 340px;">
+            	    	<h3 style="font-weight: bolder; font-size: 28px">Select known unit</h3>
+            	    	
+            	    <label style = "height:40px; width: 260px; text-align: left; color: #ffffff; font-weight: bolder;">Convert Height:</label>
+            	    <table>
+            	    	<tr>
+            	    		<td>
+            	    			<input type="text" id="heightinput" name="convert_height" placeholder="Enter Your Height" style = "height:40px; width: 180px; ">
+            	    		</td>
+            	    		<td>
+            	    			<select id="convertheight" name="height" style = "height:40px; width: 70px;">
+            	    				<option value="mtr">mtr</option>
+            						<option value="cm">cm</option>
+            						<option value="feet">feet</option>
+            						<option value="inch">inch</option>
+            					</select>
+            	    		</td>
+            	    	</tr>
+            	    </table>
+            	    <br>
+            	    <label style = "height:40px; width: 260px; text-align: left; color: #ffffff; font-weight: bolder;">Convert Weight:</label>
+            	    <table>
+            	    	<tr>
+            	    		<td>
+            	    			<input type="text" id="weightinput" name="convert_weight" placeholder="Enter Your Weight" style = "height:40px; width: 180px;">
+            	    		</td>
+            	    		<td>
+            	    			<select id="convertweight" name="weight" style = "height:40px; width: 70px;">
+            						<option value="kg">kg</option>
+            						<option value="lbs">lbs</option>
+            						<option value="ounce">ounce</option>
+            						<option value="stone">stone</option>
+            					</select>
+            	    		</td>
+            	    	</tr>
+            	    	
+            	    </table>
+            		<center>
+            			<br><br>
+              <button onclick="convert()" class="buy-btn" style="background-color: #283A5AE6; ">Convert</button>
+            	</center>
+            	</div>      
+      </div>
+      </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="box featured">
+            	<center><h1 style="padding: 5px">Know Your BMI</h1></center>
+            	<div class="box featured" style="background-color:  #47B2E4; height: 430px; width: 340px;">
+            		<center>
+            			<br>
+              <input type="number" id="currentage" name="Age" placeholder="Enter Your Age" style = "height:40px; width: 260px; background-color: white;">
+              <br><br><br>
+              <input type="text" name="heightbmi" id="heightbmi" placeholder="Height in Meters" disabled="text" style = "height:40px; width: 260px; background-color: white;">
+              <br><br><br>
+              <input type="text" name="weightbmi" id="weightbmi"
+              placeholder="Weight in Kilograms" disabled="text" style = "height:40px; width: 260px; background-color: white;">
+              <br><br>
+              <button onclick="calculate()" class="buy-btn" style="background-color: #283A5AE6">Calculate</button>
+            	</center>
+            	</div>            	
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+            	<center><h1 style="padding: 5px">Get Results</h1></center>
+            	    <div class="box" style="background-color:  #47B2E4; height: 430px; width: 340px;">
+            		<center>
+
+              <label style = "height:40px; width: 260px; text-align: left; color: #ffffff; font-weight: bolder;">Current BMI Value:</label>
+              <input type="text" id="current_bmi_value" name="current_bmi_value" disabled="text" style = "height:40px; width: 260px; background-color: white;">
+              <br>
+              <label style = "height:40px; width: 260px; text-align: left; color: #ffffff; font-weight: bolder;">Prescribed BMI Value:</label>
+              <input type="text" id="prescribed_bmi_value" name="prescribed_bmi_value" disabled="text" style = "height:40px; width: 260px; background-color: white;">
+              <br>
+              <label style = "height:40px; width: 260px; text-align: left; color: #ffffff; font-weight: bolder;">BMI Category:</label>
+              <input type="text" id = "bmi_category" name="bmi_category" disabled="text" style = "height:40px; width: 260px; background-color: white;">
+              <br><br>
+              <button onclick="location.href='personalizedtips.html'" class="buy-btn" style="width:auto; background-color: #283A5AE6">Get Tips</button></center>
+            	</center>
+              <!-- <div id="id01" class="modal"> -->
+  
+  <!-- <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="assets/img/login.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" style = "height:40px; width: 260px"required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" style = "height:40px; width: 260px" required>
+        <br>
+      <button type="submit"class="buy-btn" style="width:auto; background-color: #283A5AE6">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'"  class="buy-btn" style="width:auto; background-color: crimson">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+  </form> -->
+<!-- </div> -->
+            	</div>     
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What is BMI?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p align="justify">
+                  BMI is an acronym for Body Mass Index, and it is an indicator of the amount of fat which is stored in the human body. It provides a measure of the appropriateness of your weight to your height, based on health issues which are known to arise as a result of having a BMI which is too low or too high.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What is BMI important?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p align="justify">
+                  BMI is important as it is able to predict, with considerable accuracy, mortality and morbidity rates in populations. What this means is that BMI is not only able to predict the rates at which people within a given population or group will die and suffer disease, but it is able to predict the incidence of the different types of diseases which occur in the population and which cause those deaths. However, as Adolphe Quetelet (see ‘Who invented BMI?’ above) and Ancel Keys stressed, BMI’s predictive abilities apply to populations only, and not to individuals within it.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How is BMI calculated? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p align="justify">
+                  BMI is calculated using only the variables of weight and height. Your BMI is equal to your weight in kilograms divided by your height in metres squared. You can also calculate your BMI using imperial units, in which case your BMI is equal to your weight in pounds divided by your height in inches squared, multiplied by 703. See the BMI page for these equations and for further information on the Body Mass Index. To calculate your own BMI, use our BMI calculator.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Does muscle mass affect BMI? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p align="justify">
+                  Muscle mass in itself does not affect BMI, but very high and very low levels of muscle mass in relation to people of the same gender and ethnicity can produce misleading BMI results. For example, body builders can develop substantial muscle mass and have low levels of stored fat, leading to BMI results which may indicate that they are overweight when that is not the case. Also, elderly people can experience muscle wasting but maintain high levels of stored fat, leading to BMI results which incorrectly indicate that they are in the healthy weight range. For this reason people in either of these groups should not rely on BMI calculations.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Is gender a factor in BMI? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p align="justify">
+                  Yes, gender is a factor in BMI, even though the World Health Organisation (for simplicity) uses the same BMI categories and ranges for both males and females. However, it is well documented that women tend to carry higher levels of stored fat than men1,2. For women with a BMI in the healthy weight range, fat comprises around 15% to 20% of total body weight, whereas the corresponding percentages in men are 10% to 15%. The reason why women tend to carry more fat than men is the biological expectation of pregnancy, and the imperative to nourish the feotus.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <h3> SPECIALIZATION PROJECT</h3>
+	  <h3> 5 MCA STUDENTS </h3>
+	  <h3> Christ (Deemed to be University) </h3>
+        </div>
+
+        <div class="row">
+
+          <!-- <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Alen Grace Skaria</h4>
+		<h8> 5 MCA </h8>
+                <span>Team Member - 1947203</span>
+                <p align="justify">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Asha Thampi</h4>
+		<h8> 5 MCA </h8>
+                <span>Team Member - 1947206</span>
+                <p align="justify"></p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Harshitha T</h4>
+		<h8> 5 MCA </h8>
+                <span>Team Member - 1947223</span>
+                <p align="justify"></p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <center>
+          	<div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr.Ramesh Chandra Poonia</h4>
+		<h8>Associate Professor</h8>
+                <span>Team Guide</span>	
+
+                <p align="justify"></p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </center>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p align="justify">Dharmaram College Post, Hosur Road,<br> Bengaluru - 560029, Karnataka, India</p>
+     
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p align="justify">team@christuniversity.in</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p align="justify">+91 804012 9100 / 9600</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31110.268793827123!2d77.60674437174536!3d12.921625600116762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1schrist%20university%20hosur%20main%20road%20bhavani%20nagar%20suddagunte%20palya%20bengaluru%20karnataka!5e0!3m2!1sen!2sin!4v1636690583486!5m2!1sen!2sin" width="400" height="300"  frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p  align="justify">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>TRUINDEX</h3>
+            <p align="justify">
+              Christ (Deemed to be University) <br>
+	      Hosur Main Road<br>
+              Bangalore - 560029<br>
+              Karnataka, India <br><br>
+              <strong>Phone:</strong> +91 804012 9100 / 9600<br>
+              <strong>Email:</strong> team@christuniversity.in<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p align="justify">To know more about us reach out to us!</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Group5</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/BMI_Calculator.js"></script>
+  <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+<!--AMPLE MASSFLOW MASSCAPE MASSCAN -->
+</html>

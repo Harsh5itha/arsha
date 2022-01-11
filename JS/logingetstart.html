@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login Form
+        </title>
+        <link rel="stylesheet" type="text/css" href="logingetstart.css">
+        <link rel="stylesheet" type="text/css" href="Prog2.css">
+    </head>
+    <body background="page.jpg" style="background-size: cover;">
+        <table>
+            <tr>
+                <td><div class="bar1"><figure><img src="icon.png" alt="ICON" width="100" height="100"></figure></div></td>
+                <td><div class="bar1"><a href="openpage.html">Home page</a></div></td>
+                <td><div class="bar1"><a href="About.html">About</a></div></td>
+                <td><div class="bar1"><a href="Help.html">Help</a></div></td>
+                <td><div class="bar1"><a href="Contact.html">Contact</a></div></td>    
+            </tr>    
+        </table>
+        <h1 align="center">Hotel Management System</h1>
+        <table align="center" style="padding: px;">
+            <tr>
+                <td>
+                    <h2 align="center">Already member ??</h2>
+                    <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Sign In</button>
+                    <div id="login" class="modal">
+                        <form class="modal-content animate">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="signin.png" alt="Signinimage" class="avatar" style="width: 7em; height: 7em;">
+                            </div>
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                <button type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    <script>
+                        var modal = document.getElementById('login');
+                        window.onclick = function(event) 
+                        {
+                            if (event.target == modal) 
+                            {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </td>
+                <td style="padding: 3em;"></td>
+                <td>
+                    <h2 align="center">No? Come join!!</h2>
+                    <button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button><div id="signup" class="modal">
+                    
+                    <form class="modal-content animate" name="Signup" onsubmit="return validationForm();">
+                        <div class="imgcontainer">
+                                <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="signup.png" alt="Signupimage" class="avatar" style="width: 7em; height: 7em;">
+                            </div>
+                        <div class="container">
+                            <label for="username"><b>User Name</b></label><br/>
+                            <input type="text" placeholder="Enter User Name (example:xyz)" name="username" >
+                            <label for="user"><b>User ID</b></label><br/>
+                            <input type="text" placeholder="Enter User ID (example:xyz123)" name="user" required>
+                            <label for="email"><b>Email</b></label><br/>
+                            <input type="text" placeholder="Enter Email (example:xyz@abc.com)" name="email" required>
+                            <label for="psw"><b>Password</b></label><br/>
+                            <input type="password" placeholder="Enter Password (example:saeMds#260498)" name="psw" required>
+                            <label for="psw-repeat"><b>Repeat Password</b></label><br/>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                            <label for="country" style="margin: 8px 0;"><b>Country</b></label>
+                            <br/>
+                            <select name="country" style="padding: 12px 20px;margin: 8px 0;" required>
+                                <option selected="" value="Default">(Please select a country)</option>
+                                <option value="AF">Australia</option>
+                                <option value="AL">Canada</option>
+                                <option value="DZ">India</option>
+                                <option value="AS">Russia</option>
+                                <option value="AD">USA</option>
+                            </select>
+                            <br/>
+                            <label for="zip" style="margin: 8px 0;"><b>ZIP Code</b></label>
+                            <input name="zip" placeholder="Enter Area Code" type="text" required>
+                            <label id="gender" style="padding: 12px 20px;margin: 8px 0;"><b>Gender</b></label><br/>
+                            <input type="radio" name="msex" value="Male" style="padding: 12px 20px;margin: 8px 0;"/><span>Male</span>
+                            <input type="radio" name="fsex" value="Female" style="padding: 12px 20px;margin: 8px 0;"/><span>Female</span><br/>
+                            <label style="padding: 12px 20px;margin: 8px 0;"><b>Language</b></label><br/>
+                            <input type="checkbox" name="eng" value="eng" checked style="padding: 12px 20px;margin: 8px 0;style=margin-bottom:15px;"/>
+                            <span> English</span>
+                            <input type="checkbox" name="noneng" value="noneng" style="padding: 12px 20px;margin: 8px 0;style=margin-bottom:15px;"/>
+                            <span> Non-English</span>
+                            <button type="submit">Sign Up</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                            </label>
+                            <p>By creating an account you agree to our 
+                                <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                            </p>
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <script type="text/javascript">
+                        
+                        var closew = document.getElementById('signup');
+                        window.onclick = function(event) 
+                        {
+                            if (event.target == closew) 
+                            {
+                                closew.style.display = "none";
+                            }
+                        }
+                        function formValidation()
+                        {
+                            if(document.Signup.username.value="")
+                                {
+                                    window.alert( "Please provide your Name!" );
+                                    document.Signup.username.focus() ;
+                                    return false;
+                                }
+//                            var uid = document.Signup.user;
+//                            var passid = document.Signup.psw;
+//                            var uname = document.Signup.username;
+//                            var uadd = document.Signup.address;
+//                            var ucountry = document.Signup.country;
+//                            var uzip = document.Signup.zip;
+//                            var uemail = document.Signup.email;
+//                            var umsex = document.Signup.msex;
+//                            var ufsex = document.Signup.fsex; 
+//                            if(userid_validation(uid,5,12))
+//                            {
+//                                if(passid_validation(passid,7,12))
+//                                {
+//                                    if(allLetter(uname))
+//                                    {
+//                                        if(alphanumeric(uadd))
+//                                        { 
+//                                            if(countryselect(ucountry))
+//                                            {
+//                                                if(allnumeric(uzip))
+//                                                {
+//                                                    if(ValidateEmail(uemail))
+//                                                    {
+//                                                        if(validsex(umsex,ufsex))
+//                                                        {
+//                                                        }
+//                                                    } 
+//                                                }
+//                                            } 
+//                                        }
+//                                    }
+//                                }
+//                            }
+//                            return false;
+//                        }
+//                        function userid_validation(uid,mx,my)
+//                        {
+//                            var uid_len = uid.value.length;
+//                            if (uid_len == 0 || uid_len >= my || uid_len < mx)
+//                            {
+//                                alert("User Id should not be empty / length be between "+mx+" to "+my);
+//                                uid.focus();
+//                                return false;
+//                            }
+//                            return true;
+//                        }
+//                        function passid_validation(passid,mx,my)
+//                        {
+//                            var passid_len = passid.value.length;
+//                            if (passid_len == 0 ||passid_len >= my || passid_len < mx)
+//                            {
+//                                alert("Password should not be empty / length be between "+mx+" to "+my);
+//                                passid.focus();
+//                                return false;
+//                            }
+//                            return true;
+//                        }
+//                        function allLetter(uname)
+//                        { 
+//                            var letters = /^[A-Za-z]+$/;
+//                            if(uname.value.match(letters))
+//                            {
+//                                return true;
+//                            }
+//                            else
+//                            {
+//                                alert('Username must have alphabet characters only');
+//                                uname.focus();
+//                                return false;
+//                            }
+//                        }
+//                        function alphanumeric(uadd)
+//                        { 
+//                            var letters = /^[0-9a-zA-Z]+$/;
+//                            if(uadd.value.match(letters))
+//                            {
+//                                return true;
+//                            }
+//                            else
+//                            {
+//                                alert('User address must have alphanumeric characters only');
+//                                uadd.focus();
+//                                return false;
+//                            }
+//                        }
+//                        function countryselect(ucountry)
+//                        {
+//                            if(ucountry.value == "Default")
+//                            {
+//                                alert('Select your country from the list');
+//                                ucountry.focus();
+//                                return false;
+//                            }   
+//                            else
+//                            {
+//                                return true;
+//                            }
+//                        }
+//                        function allnumeric(uzip)
+//                        { 
+//                            var numbers = /^[0-9]+$/;
+//                            if(uzip.value.match(numbers))
+//                            {
+//                                return true;
+//                            }
+//                            else
+//                            {
+//                                alert('ZIP code must have numeric characters only');
+//                                uzip.focus();
+//                                return false;
+//                            }
+//                        }
+//                        function ValidateEmail(uemail)
+//                        {
+//                            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//                            if(uemail.value.match(mailformat))
+//                            {
+//                                return true;
+//                            }
+//                            else
+//                            {
+//                                alert("You have entered an invalid email address!");
+//                                uemail.focus();
+//                                return false;
+//                            }
+//                        } 
+//                        function validatesex(umsex,ufsex)
+//                        {
+                            
+                        }
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
